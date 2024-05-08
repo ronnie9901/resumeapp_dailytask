@@ -17,6 +17,37 @@ samples, guidance on mobile development, and a full API reference.
 
 
 
+# AppBar Both
+```dart
+ return Scaffold(
+      backgroundColor: Colors.white,
+      appBar: AppBar(
+        backgroundColor: Colors.black,
+        systemOverlayStyle: SystemUiOverlayStyle(statusBarColor: Colors.green),
+      ),
+    );
+```
+
+ # Globle
+ ```
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
+      statusBarColor: Colors.green,
+    ));
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home:StatusBar(),
+    );
+  }
+}
+```
+    
+
+
 <h1> List of Map <h1>
  <h1>What is List and Map?</h1>
  List :  The list is an ordered collection of objects and the List can contain duplicate values.
