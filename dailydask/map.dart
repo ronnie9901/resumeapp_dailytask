@@ -18,7 +18,7 @@ void main()
    
    for(String key in person.keys)
    {
-    stdout.write("enter the keys ");
+    stdout.write("enter the keys ${key}");
     person[key]=stdin.readLineSync();
    }
    print("");
