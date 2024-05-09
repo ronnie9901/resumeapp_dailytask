@@ -17,6 +17,12 @@ samples, guidance on mobile development, and a full API reference.
 
 
 
+
+  <img height="https://github.com/ronnie9901/resumeapp_dailytask/assets/148763509/511b79fc-23d0-4c97-a203-80393c9c4a76"  />
+
+  <img height="https://github.com/ronnie9901/resumeapp_dailytask/assets/148763509/678aecdd-5d17-4e94-9dc9-b3b51b156191"  />
+
+
 # AppBar Both
 ```dart
  return Scaffold(
