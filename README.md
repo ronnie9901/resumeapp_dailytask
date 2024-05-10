@@ -28,6 +28,10 @@ samples, guidance on mobile development, and a full API reference.
   </div>
 
 
+https://github.com/ronnie9901/resumeapp_dailytask/assets/148763509/d1c4f234-11c1-438e-908a-40e32d637120
+
+
+
   <div align="center">
   <img  height= "550" src="https://github.com/ronnie9901/resumeapp_dailytask/assets/148763509/81c7d5f6-408a-443d-a1e2-b4ba59a02304"  />
   
