@@ -18,12 +18,29 @@ samples, guidance on mobile development, and a full API reference.
 
 
 
+
+
 <div align="center">
   <img align="left" height= "550" src="https://github.com/ronnie9901/resumeapp_dailytask/assets/148763509/38c08a08-27b8-4c0a-ae7e-af56f607b962"  />
   
   <img height= "550" src="https://github.com/ronnie9901/resumeapp_dailytask/assets/148763509/b65df072-8841-47a7-b2d2-dc0b9f91d73c"  />
   <img align="right" height= "550" src="https://github.com/ronnie9901/resumeapp_dailytask/assets/148763509/f95b2b56-77aa-494d-ad43-9116ee079df0"  />
   </div>
+
+
+  <div align="center">
+  <img  height= "550" src="https://github.com/ronnie9901/resumeapp_dailytask/assets/148763509/81c7d5f6-408a-443d-a1e2-b4ba59a02304"  />
+  
+  <img height= "550" src="https://github.com/ronnie9901/resumeapp_dailytask/assets/148763509/57c73860-45d9-481d-a0fb-ce34f1db32bd"  />
+  <img  height= "550" src="https://github.com/ronnie9901/resumeapp_dailytask/assets/148763509/f222398f-213c-4660-b854-3639897f766a"  />
+
+
+https://github.com/ronnie9901/resumeapp_dailytask/assets/148763509/fb273204-4d02-4682-a70d-326ca3ef919b
+
+
+
+  </div>
+  
 
 
 # AppBar Both
