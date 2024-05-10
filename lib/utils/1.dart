@@ -68,7 +68,7 @@ class _WelcomePageState extends State<WelcomePage> {
                         ),
                     child: Center(
                         child: Text(
-                          "LOGIN",
+                          "SIGNUP",
                           style: TextStyle(
                               color: Colors.black,
                               fontWeight: FontWeight.w700,
@@ -94,7 +94,7 @@ class _WelcomePageState extends State<WelcomePage> {
                           ),
                       child: Center(
                           child: Text(
-                            "SIGNUP",
+                            "LOGIN",
                             style: TextStyle(
                                 color: Colors.white,
                                 fontWeight: FontWeight.w700,
