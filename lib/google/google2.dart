@@ -75,6 +75,10 @@ class _google2State extends State<google2> {
                                       {
                                         return 'password must required';
                                       }
+                                     if(value!.contains(' '))
+                                     {
+                                      return 'space is not allow ';
+                                     }
                                     if(value!.length<=8 || value!.length>=32)
                                       {
                                         return ' max 8 latter provide';
@@ -166,13 +170,28 @@ class _google2State extends State<google2> {
                                       backgroundColor: Colors.blue ,
                                       onPressed: () {
                                           bool res=formkey.currentState!.validate();
+                                          formkey.currentState!.reset();
+                                          ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Padding(
+                                            padding: const EdgeInsets.all(8.0),
+                                            child: Row(
+                                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                              children: [
+                                                Text('Email success !'),
+                                                TextButton(onPressed: () {
+                                                  formkey.currentState!.reset();
+
+                                                }, child: Text('retry',style: TextStyle(color: Colors.white),))
+                                              ],
+                                            ),
+                                          ),
+                                          ),
+                                          );
+
                                           if(res)
                                           {
                                             password=txtpass.text;
                                             Navigator.of(context).pushNamed('/google3');
                                           }
-
-
                                       },
                                       child: Text('Sign in'),
                                     ),

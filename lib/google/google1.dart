@@ -8,8 +8,10 @@ class google1 extends StatefulWidget {
   @override
   State<google1> createState() => _google1State();
 }
-TextEditingController txtemail=TextEditingController();
-GlobalKey<FormState> formkey=GlobalKey();
+
+TextEditingController txtemail = TextEditingController();
+GlobalKey<FormState> formkey = GlobalKey();
+
 class _google1State extends State<google1> {
   @override
   Widget build(BuildContext context) {
@@ -25,7 +27,7 @@ class _google1State extends State<google1> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Container(
-                    margin: EdgeInsets.only(left: 100,top: 50),
+                    margin: EdgeInsets.only(left: 100, top: 50),
                     alignment: Alignment.center,
                     height: 300,
                     width: 700,
@@ -64,7 +66,9 @@ class _google1State extends State<google1> {
                             ],
                           ),
                         ),
-                        SizedBox(height: 50,),
+                        SizedBox(
+                          height: 50,
+                        ),
                         Padding(
                           padding: const EdgeInsets.only(right: 20),
                           child: Column(
@@ -73,22 +77,20 @@ class _google1State extends State<google1> {
                             children: [
                               SizedBox(
                                 width: 350,
-
                                 child: TextFormField(
                                   validator: (value) {
-                                    if(value!.isEmpty)
-                                      {
-                                        return 'field the email or phone number ';
-                                      }
-                                      if(!value.contains('@gmail.com'))
-                                       {
-                                         return 'must be inter @gmail.com';
-                                       }
-                                    if(value!.toString()=='@gmail.com')
-                                       {
-                                         return 'must be inter @gmail.com';
-                                       }
-
+                                    if (value!.isEmpty) {
+                                      return 'field the email or phone number ';
+                                    }
+                                    if (!value.contains('@gmail.com')) {
+                                      return 'must be inter @gmail.com';
+                                    }
+                                    if (value!.toString() == '@gmail.com') {
+                                      return 'must be inter @gmail.com';
+                                    }
+                                    if (value!.contains(' ')) {
+                                      return 'space is not allow ';
+                                    }
                                   },
                                   style: TextStyle(fontSize: 20),
                                   decoration: InputDecoration(
@@ -98,7 +100,8 @@ class _google1State extends State<google1> {
                                     hintText: 'abc@gmail.com',
                                     prefixIcon: (Icon(CupertinoIcons.person)),
                                     border: OutlineInputBorder(
-                                      borderSide: BorderSide(color: Colors.black),
+                                      borderSide:
+                                          BorderSide(color: Colors.black),
                                       borderRadius: BorderRadius.circular(10),
                                     ),
                                     label: Text('email'),
@@ -129,7 +132,9 @@ class _google1State extends State<google1> {
                                   ),
                                 ],
                               ),
-                              SizedBox(height: 20,),
+                              SizedBox(
+                                height: 20,
+                              ),
                               Row(
                                 children: [
                                   Text(
@@ -139,22 +144,43 @@ class _google1State extends State<google1> {
                                         fontSize: 10,
                                         fontWeight: FontWeight.bold),
                                   ),
-                                  SizedBox(width: 10,),
+                                  SizedBox(
+                                    width: 10,
+                                  ),
                                   Container(
                                     height: 30,
                                     width: 50,
                                     decoration: BoxDecoration(
-                                        borderRadius: BorderRadius.circular(20),
-                                       ),
+                                      borderRadius: BorderRadius.circular(20),
+                                    ),
                                     child: FloatingActionButton(
-                                      backgroundColor: Colors.blue ,
+                                      backgroundColor: Colors.blue,
                                       onPressed: () {
-                                        bool res=formkey.currentState!.validate();
-                                        if(res)
-                                          {
-                                            Navigator.of(context).pushNamed('/google2');
-                                          }
+                                        bool res =
+                                            formkey.currentState!.validate();
+                                        formkey.currentState!.reset();
+                                        ScaffoldMessenger.of(context)
+                                            .showSnackBar(
 
+                                          SnackBar(content: Padding(
+                                            padding: const EdgeInsets.all(8.0),
+                                            child: Row(
+                                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                              children: [
+                                                Text('email success !'),
+                                                TextButton(onPressed: () {
+                                                  formkey.currentState!.reset();
+                                                }, child: Text('retry',style: TextStyle(color: Colors.white,fontSize: 20),))
+                                              ],
+                                            ),
+                                          ),
+                                            backgroundColor: Colors.blue,
+                                          ),
+                                        );
+                                        if (res) {
+                                          Navigator.of(context)
+                                              .pushNamed('/google2');
+                                        }
                                       },
                                       child: Text('next'),
                                     ),
@@ -176,5 +202,3 @@ class _google1State extends State<google1> {
     );
   }
 }
-
-
