@@ -44,7 +44,13 @@ https://github.com/ronnie9901/resumeapp_dailytask/assets/148763509/fb273204-4d02
 
 
   </div>
+  <h1> image picker </h1>
   
+  
+
+https://github.com/ronnie9901/resumeapp_dailytask/assets/148763509/84b20722-8cbf-4013-b99b-c8ad061f3a08
+
+
 
 
 # AppBar Both
