@@ -50,13 +50,20 @@ https://github.com/ronnie9901/resumeapp_dailytask/assets/148763509/fb273204-4d02
 
 https://github.com/ronnie9901/resumeapp_dailytask/assets/148763509/84b20722-8cbf-4013-b99b-c8ad061f3a08
 
-  </div>
+ 
   <h1> dynamic textfied </h1>
   
-
-
 https://github.com/ronnie9901/resumeapp_dailytask/assets/148763509/8456c418-05a9-4f8c-8024-b4586358cdf2
+  <div>
+<h1> Id Card </h1>
+  <img  height= "550" src="https://github.com/ronnie9901/resumeapp_dailytask/assets/148763509/6109a378-81f6-4671-be3a-851d58106f17"  />
 
+    
+
+https://github.com/ronnie9901/resumeapp_dailytask/assets/148763509/fda369b2-e133-4bf0-9049-299bc993f2eb
+
+
+  </div>
 
 
 
