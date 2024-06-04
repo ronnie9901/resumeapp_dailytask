@@ -158,7 +158,7 @@ class _google1State extends State<google1> {
                                       onPressed: () {
                                         bool res =
                                             formkey.currentState!.validate();
-                                        formkey.currentState!.reset();
+                                          formkey.currentState!.reset();
                                         ScaffoldMessenger.of(context)
                                             .showSnackBar(
 
@@ -202,3 +202,4 @@ class _google1State extends State<google1> {
     );
   }
 }
+

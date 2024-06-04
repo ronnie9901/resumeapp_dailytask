@@ -88,6 +88,22 @@ class _imagepickState extends State<imagepick> {
                });
                 }, child: Icon(Icons.camera_alt_outlined, size: 60))
               ],
+              
+            ),
+            SizedBox(height: 20,),
+            Container(
+              height: 50,
+              width: double.infinity,
+              decoration: BoxDecoration(
+                color: Colors.blue,
+                borderRadius: BorderRadius.circular(10)
+              ),
+              child: TextButton(onPressed: () {
+
+              },
+              child: Text('submit',style: TextStyle(
+                color: Colors.black,
+              ),),),
             )
 
           ],
